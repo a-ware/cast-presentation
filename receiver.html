@@ -1,0 +1,75 @@
+<!-- Example Google Cast custom receiver app. -->
+<!-- Learn more at: https://github.com/a-ware/cast-presentation-->
+
+<!-- Created by: Amber Wareham -->
+<!-- Latest version: 2016-04-13 -->
+
+<html>
+  <head>
+    <title>Cast Presenter</title>
+
+    <!-- External library imports -->
+    <script type='text/javascript' src='https://www.gstatic.com/cast/sdk/libs/receiver/2.0.0/cast_receiver.js'></script>
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic'>
+
+    <!-- Receiver functionality imports -->
+    <script type='text/javascript' src='cast.js'></script>
+    <script type='text/javascript' src='slides.js'></script>
+    <script type='text/javascript' src='msg.js'></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script type=text/javascript>
+
+      var NUM_MESSAGES = 3;
+      var NUM_SLIDES = 53;
+
+      var messageManager = new MessageManager('messages-container', NUM_MESSAGES);
+      var slideManager = new SlideManager(NUM_SLIDES);
+      var castManager = new CastManager(messageManager);
+      castManager.castReceiverManager = cast.receiver.CastReceiverManager.getInstance();
+
+      function initialize() {
+        slideManager.initialize();
+        messageManager.initialize();
+        castManager.start();
+      }
+
+    </script>
+
+  </head>
+  <body onLoad='initialize();'>
+
+
+    <div id='banner'>
+      <div id='instructions-container'>
+        Join the fun! To get started, visit: <br/>
+        <b>https://github.com/a-ware/cast-presentation</b><br/>
+        Connect: <b>SET Cast</b> / <b>SETcast2016</b>; App ID: <b>FEB2D4B5</b>
+      </div>
+      <div id='messages-container'>
+        <div id='message0' class='message message-priority-max'>
+          <span class='message-time'></span>
+          <span class='message-user'></span>
+          <span class='message-content'></span>
+        </div>
+        <div id='message1' class='message message-priority-mid'>
+          <span class='message-time'></span>
+          <span class='message-user'></span>
+          <span class='message-content'></span>
+        </div>
+        <div id='message2' class='message message-priority-low' onClick='foo();'>
+          <span class='message-time'></span>
+          <span class='message-user'></span>
+          <span class='message-content'></span>
+        </div>
+      </div>
+    </div>
+    <div id='slides'>
+      <div id='current-slide'>
+        <img id='slide'/>
+      </div>
+    </div>
+
+  </body>
+</html>

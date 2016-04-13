@@ -1,0 +1,71 @@
+/* Example Google Cast presentation Receiver app
+ * Style sheet
+ *
+ * Created by: Amber Wareham
+ * Latest version: 2016-04-13
+ */
+
+
+body {
+  height: 720px;
+  width: 1280px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+
+#banner {
+  background-color: #202020;
+  height: 80px;
+}
+
+#instructions-container, #messages-container {
+  display: table-cell;
+  border-left: 2px solid #666666;
+  border-right: 2px solid #666666;
+  padding: 10px;
+  font-size: 13px;
+}
+
+#instructions-container {
+  width: 400px;
+  color: #EEEEEE;
+}
+
+#messages-container {
+  width: 880px;
+}
+
+.message {
+  padding-bottom: 2px;
+}
+
+.message-time {
+  font-weight: lighter;
+}
+
+.message-user {
+  font-weight: bold;
+}
+
+.message-priority-max {
+  color: #cccccc;
+}
+
+.message-priority-mid {
+  color: #999999;
+}
+
+.message-priority-low {
+  color: #666666;
+}
+
+#slides {
+  text-align: center;
+}
+
+#slide {
+  width: 1120px;
+  height: 630px;
+}
