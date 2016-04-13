@@ -2,6 +2,8 @@
 
 This repository hosts a Google Cast presentation Receiver app.  The receiver supports slide navigation and displaying received chat messages.
 
+Download the Chrome browser [cast extension](https://chrome.google.com/webstore/detail/google-cast/boadgeojelhgndaghljhdicfkmllpafd?hl)
+
 # Learn more about the Google Cast SDK
 
 https://developers.google.com/cast/docs/developers
@@ -15,6 +17,13 @@ https://developers.google.com/cast/docs/developers
 ## Building a Custom Receiver
 
 * https://developers.google.com/cast/docs/custom_receiver
+
+## Sample Apps
+
+* https://github.com/googlecast
+* https://github.com/googlecast/CastHelloText-chrome
+* https://github.com/googlecast/CastHelloText-android
+* https://github.com/googlecast/CastHelloText-ios
 
 # Presentation Receiver Interaction
 
