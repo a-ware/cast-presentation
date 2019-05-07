@@ -1,10 +1,10 @@
 # About This Project
 
-This repository hosts a Google Cast presentation Receiver app.  The receiver supports slide navigation and displaying received chat messages.  This was a school project developed in 2016 to deliver a presentation about how to build a Google Cast application for Chromecast.
+This repository hosts a Google Cast receiver application that facilitates delivering a presention.  The receiver supports slide navigation and displaying received chat messages.  This was a school project developed in 2016 to deliver a presentation about how to build Google Cast applications for Chromecast, focusing on how to develop an Android sender app and a HTML/JavaScript receiver app.
 
 Download the Chrome browser [cast extension](https://chrome.google.com/webstore/detail/google-cast/boadgeojelhgndaghljhdicfkmllpafd?hl)
 
-# Learn more about the Google Cast SDK
+# Learn More About the Google Cast SDK
 
 https://developers.google.com/cast/docs/developers
 
@@ -27,11 +27,11 @@ https://developers.google.com/cast/docs/developers
 
 # Presentation Receiver Interaction
 
-## Sending messages to the Presentation Reciever
+## Sending Messages to the Presentation Reciever
 
-The Receiver uses the namespace `urn:x-cast:com.set.cast` to handle two types of incoming messages with a JSON payload:
-* 'chat'
-* 'slide'
+The receiver uses the namespace `urn:x-cast:com.set.cast` to handle two types of incoming messages with a JSON payload:
+* chat
+* slide
 
 ### Chat Messages
 
